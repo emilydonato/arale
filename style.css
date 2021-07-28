@@ -1,0 +1,210 @@
+html {
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: dimgray;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    line-height: 1.8rem;
+}
+#header {
+    background-color: hotpink;
+    width: 100%;
+    padding: 1.2rem 2rem;
+    position: relative;
+    float: left;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid white;
+    transition: 0.5s;
+    z-index: 10;
+}
+main {
+    margin-top: 120px;
+}
+h1 {
+    color: mediumvioletred;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 2.5rem;
+}
+h2 {
+    color: #222;
+    font-family: Nunito;
+    font-size: 2rem;
+}
+h3 {
+    color: #222;
+    font-family: Nunito;
+    font-size: 1.5rem;
+}
+p {
+    font-size: 18px;
+    line-height: 2.5rem;
+}
+.floatRight {
+    float: right;
+}
+#logo {
+    font-family: Nunito;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: yellow;
+    background: black;
+    border: 2.5px solid white;
+    border-radius: 10px;
+    float: left;
+    padding: 0.7rem 0.8rem;
+    transition: 0.3s;
+}
+.aboutme {
+    width: 65%;
+    float: left;
+    padding: 3rem 5rem 2rem 2rem;
+}
+.mainpic {
+    width: 35%;
+    float: right;
+    padding: 2rem 5rem 2rem 2rem;
+}
+.pinktext {
+    color: mediumvioletred;
+    display: inline;
+}
+.parallax {
+    width: 100%;
+    float: left;
+    background-color: black;
+}
+.parallaxBg {
+    background-image:url('parallax_bg.png');
+    min-height: 650px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallaxPa {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.parallaxPa p {
+    background: white;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 20px;
+    float: left;
+}
+.parallaxTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.parallaxTitle h2 {
+    background-color: mediumvioletred;
+    color: white;
+    margin-top: 80px;
+    padding: 20px;
+    border: 1px solid white;
+}
+.parallaxBg1 {
+    background-image:url('arale_bg.png');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section {
+    width: 100%;
+    float: left;
+    margin: 50px auto;
+}
+.mainTitle {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.colLayout {
+    width: 100%;
+    float: left;
+    display: block;
+    margin-bottom: 10px;
+}
+.col33 {
+    width: 33%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.recOne {
+    width: 90%;
+    height: 60px;
+    background-color: hotpink;
+    position: relative;
+    cursor: pointer;   
+    border-radius: 100px;
+}
+.changeBg1 {
+    background-color: #F450A2;
+}
+.changeBg2 {
+    background-color: #EE3A94;
+}
+.recInside {
+    width: 100%;
+    height: 60px;
+    background-color:mediumvioletred;
+    transform: scale(1, 0);
+    transition: transform 500ms;
+    border-radius: 100px;
+}
+.recOne:hover .recInside {
+    transform: scale(1, 1);
+}
+.textInside {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Nunito;  
+}
+.recOne .defContainer {
+    position: absolute;
+    bottom: 50px;
+    left: 35px;
+    z-index: 2;
+    background-color: white;
+    border: 2px dotted hotpink;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 80%;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 700ms, transform 700ms;
+}
+.recOne:hover .defContainer {
+    opacity: 0.95;
+    transform: scale(1);
+}
+.defContainer p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+footer {
+    width: 100%;
+    background-color: purple; /*for browsers that not support gradient*/
+    background-image: repeating-linear-gradient(-45deg, purple, purple, purple, purple, darkmagenta, darkmagenta, darkmagenta 0.5%);
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid white;
+}

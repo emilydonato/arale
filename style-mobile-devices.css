@@ -1,0 +1,102 @@
+.colLayoutMobile {
+    width: 100%;
+    float: left;
+    display: none;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:1050px) {
+    p {
+        font-size: 15px;
+        line-height: 2.2rem;
+    }
+    .parallax p {
+        padding: 20px 30px;
+    }
+    .parallaxBg {
+        min-height: 550px;
+    }
+    .parallaxTitle h2 {
+        margin-top: 50px;
+    }
+    .textInside {
+        font-size: 1.3rem;
+    }
+    .recOne:hover .defContainer {
+        display: none;
+        opacity: 0;
+    }
+    .colLayout {
+        display: none;
+    }
+    .colLayoutMobile {
+        display: block;
+    }
+}
+@media screen and (max-width:800px) {
+    main {
+        margin-top: 80px;
+    }
+    h1 {
+        font-size: 2.7rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    .aboutme {
+        width: 100%;
+    }
+    .mainpic {
+        float: left;
+        padding: 0 20px 20px 20px;
+    }
+    .textInside {
+        font-size: 1.1rem;
+    }
+    .parallaxBg {
+        min-height: 480px;
+    }
+    .parallaxTitle h2 {
+        margin-top: 40px;
+        padding: 15px;
+    }
+    .parallaxPa p {
+        margin-top: 40px;
+    }
+    .parallaxBg1 {
+        min-height: 350px
+    }
+}
+@media screen and (max-width:700px) {
+    p {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    .aboutme {
+        width: 100%;
+    }
+    .mainpic {
+        display: none;
+    }
+    .colLayoutMobile {
+        margin-bottom: 0;
+    }
+    .col33 {
+        width: 100%;
+    }
+    .recOne {
+        margin-bottom: 10px;
+    }
+    .textInside {
+        font-size: 1.4rem;
+    }
+    .parallaxBg {
+        min-height: 500px;
+    }
+    .parallaxPa p {
+        margin-top: 20px;
+    }
+    .parallaxTitle h2 {
+        margin-top: 30px;
+    }
+}
